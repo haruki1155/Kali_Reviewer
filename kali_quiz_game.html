@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#08131d" />
+  <title>Kali Linux Quiz Game</title>
+  <link rel="stylesheet" href="kali_quiz_game.css" />
+</head>
+<body id="top">
+  <a class="skip-link" href="#content">Skip to content</a>
+
+  <header class="cover">
+    <div class="cover-inner">
+      <p class="eyebrow">Mobile-Friendly Study Arcade</p>
+      <h1>Kali Linux Quiz Game</h1>
+      <p class="tagline">A cover-to-cover reviewer + quiz game built from your three PDFs: installation, information gathering, and the command guide.</p>
+      <div class="cover-meta">
+        <span>Install &amp; Configure</span>
+        <span>Recon &amp; Scanning</span>
+        <span>Command Atlas</span>
+        <span>Quiz Mode</span>
+      </div>
+      <div class="hero-actions">
+        <a class="hero-btn primary" href="#quiz-arena">Play Quiz</a>
+        <a class="hero-btn" href="#pdf-library">Open Source PDFs</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="content" class="page-shell">
+    <nav class="mobile-jump panel" aria-label="Quick section jump">
+      <h2>Quick Jump</h2>
+      <div class="chip-row">
+        <a href="#how-to-use">How to Use</a>
+        <a href="#study-basics">Core Setup</a>
+        <a href="#study-updates">Updates</a>
+        <a href="#study-recon">Recon</a>
+        <a href="#command-atlas">Command Atlas</a>
+        <a href="#quiz-arena">Quiz Arena</a>
+        <a href="#pdf-library">PDF Library</a>
+      </div>
+    </nav>
+
+    <section id="how-to-use" class="intro panel">
+      <h2>How to use this page</h2>
+      <ul class="quick-rules">
+        <li><strong>Study mode:</strong> open the flashcards and skim the command atlas.</li>
+        <li><strong>Game mode:</strong> hit <em>Play Quiz</em>, answer randomized questions, and chase a new high score.</li>
+        <li><strong>Source mode:</strong> open the included PDFs from the library at the bottom.</li>
+      </ul>
+      <div class="warning-note">
+        <strong>Lesson note:</strong> the uploaded installation lesson references an older Kali release, so this reviewer stays aligned with the class material rather than modernizing it.
+      </div>
+    </section>
+
+    
+    <section id="study-basics" class="study-section">
+      <div class="section-heading">
+        <span class="section-kicker">Study Deck</span>
+        <h2>Core Setup</h2>
+      </div>
+      <div class="flashcard-grid">
+        
+    <details class="flashcard">
+      <summary>What is Kali Linux in the lesson?</summary>
+      <div class="answer">
+        <p>An open-source security package with tools arranged by category.</p>
+        <p class="memory">Think: a hacker toolkit sorted into labeled drawers.</p>
+      </div>
+    </details>
+    
+    <details class="flashcard">
+      <summary>What three ways can Kali be used?</summary>
+      <div class="answer">
+        <p>As a direct operating system install, a virtual machine, or a live boot CD/USB.</p>
+        <p class="memory">Install it, virtualize it, or carry it.</p>
+      </div>
+    </details>
+    
+    <details class="flashcard">
+      <summary>Why does the lesson recommend VirtualBox?</summary>
+      <div class="answer">
+        <p>It is presented as a safer testing environment for unknown packages or code, while letting Kali run beside your main OS.</p>
+        <p class="memory">VirtualBox = the sandbox where experiments happen.</p>
+      </div>
+    </details>
+    
+    <details class="flashcard">
+      <summary>What four-step chain should you memorize for the lab?</summary>
+      <div class="answer">
+        <p>VirtualBox → Kali Linux → Update Kali → Add Metasploitable.</p>
+        <p class="memory">Build the arena before the boss fight.</p>
+      </div>
+    </details>
+    
+    <details class="flashcard">
+      <summary>What are the default Kali credentials in the notes?</summary>
+      <div class="answer">
+        <p>Username: root | Password: toor.</p>
+        <p class="memory">Mirror memory trick: root ↔ toor.</p>
+      </div>
+    </details>
+    
+    <details class="flashcard">
+      <summary>What are the default Metasploitable credentials?</summary>
+      <div class="answer">
+        <p>Username: msfadmin | Password: msfadmin.</p>
+        <p class="memory">The lab target is being unusually cooperative.</p>
+      </div>
+    </details>
+    
+      </div>
+    </section>
+    
+    <section id="study-updates" class="study-section">
+      <div class="section-heading">
+        <span class="section-kicker">Study Deck</span>
+        <h2>Update Trio</h2>
+      </div>
+      <div class="flashcard-grid">
+        
+    <details class="flashcard">
+      <summary>What does `apt-get update` do?</summary>
+      <div class="answer">
+        <p>Updates the package index so Kali knows the latest available package information.</p>
+        <p class="memory">Update = check the menu.</p>
+      </div>
+    </details>
+    
+    <details class="flashcard">
+      <summary>What does `apt-get upgrade` do?</summary>
+      <div class="answer">
+        <p>Upgrades installed packages to their latest versions.</p>
+        <p class="memory">Upgrade = order the food.</p>
+      </div>
+    </details>
+    
+    <details class="flashcard">
+      <summary>What does `apt-get dist-upgrade` do in the notes?</summary>
+      <div class="answer">
+        <p>Performs a fuller system upgrade including dependency changes.</p>
+        <p class="memory">Dist-upgrade = renovate the whole restaurant.</p>
+      </div>
+    </details>
+    
+    <details class="flashcard">
+      <summary>What should you type when the upgrade asks to continue?</summary>
+      <div class="answer">
+        <p>Type Y and press Enter.</p>
+        <p class="memory">The dramatic single-letter yes.</p>
+      </div>
+    </details>
+    
+      </div>
+    </section>
+    
+    <section id="study-recon" class="study-section">
+      <div class="section-heading">
+        <span class="section-kicker">Study Deck</span>
+        <h2>Recon Essentials</h2>
+      </div>
+      <div class="flashcard-grid">
+        
+    <details class="flashcard">
+      <summary>Nmap vs. Zenmap: what is the difference?</summary>
+      <div class="answer">
+        <p>They are practically the same tool, but Nmap is command line while Zenmap is GUI.</p>
+        <p class="memory">Nmap = the brain; Zenmap = the face.</p>
+      </div>
+    </details>
+    
+    <details class="flashcard">
+      <summary>What does `nmap -O` do?</summary>
+      <div class="answer">
+        <p>Performs OS type/version detection.</p>
+        <p class="memory">O = OS detective.</p>
+      </div>
+    </details>
+    
+    <details class="flashcard">
+      <summary>What does `nmap -p 1-65535 -T4` do?</summary>
+      <div class="answer">
+        <p>Scans all TCP ports using the timing/speed setting shown in the lesson.</p>
+        <p class="memory">All ports, faster pace.</p>
+      </div>
+    </details>
+    
+    <details class="flashcard">
+      <summary>What is a stealth scan?</summary>
+      <div class="answer">
+        <p>A SYN or half-open scan that does not complete the full TCP three-way handshake.</p>
+        <p class="memory">Knock, listen, leave.</p>
+      </div>
+    </details>
+    
+    <details class="flashcard">
+      <summary>What does Searchsploit do?</summary>
+      <div class="answer">
+        <p>Searches the Exploit Database archive directly from the command line.</p>
+        <p class="memory">A search engine in a hacker hoodie.</p>
+      </div>
+    </details>
+    
+    <details class="flashcard">
+      <summary>What does Metagoofil appear to do in the screenshot?</summary>
+      <div class="answer">
+        <p>Search online for PDF files from a target domain with a result limit.</p>
+        <p class="memory">The metadata goblin rummaging through public docs.</p>
+      </div>
+    </details>
+    
+      </div>
+    </section>
+    
+
+    <section id="command-atlas" class="study-section">
+      <div class="section-heading">
+        <span class="section-kicker">Reference</span>
+        <h2>Command Atlas</h2>
+      </div>
+      <p class="section-lead">These are the command groups added from <em>KALI-COMMANDS.pdf</em>, turned into a quick-scroll reference for review before the quiz.</p>
+      <div class="atlas-grid">
+        
+    <article class="atlas-card panel">
+      <h3>Information Gathering</h3>
+      <ul class="atlas-list">
+        <li><strong>nmap</strong><span>Discovers hosts, open ports, services, and OS versions.</span></li><li><strong>lbd</strong><span>Detects whether a site uses load balancing.</span></li><li><strong>hping3</strong><span>Advanced packet crafting tool using TCP, UDP, ICMP, and RAW-IP.</span></li><li><strong>dnsenum</strong><span>Retrieves MX, A, and related DNS records.</span></li><li><strong>dnsmap</strong><span>Finds subdomains and related domain-linked details.</span></li><li><strong>dnstracer</strong><span>Determines where a DNS server gets information for a hostname.</span></li>
+      </ul>
+    </article>
+    
+    <article class="atlas-card panel">
+      <h3>Vulnerability / Web / Exploitation</h3>
+      <ul class="atlas-list">
+        <li><strong>cisco-torch</strong><span>Scans Cisco devices for vulnerabilities.</span></li><li><strong>CAT</strong><span>Cisco Auditing Tool for common security weaknesses.</span></li><li><strong>cge.pl</strong><span>Cisco Global Exploiter tool.</span></li><li><strong>bed</strong><span>Tests services for buffer overflow vulnerabilities.</span></li><li><strong>sqlmap</strong><span>Automates SQL injection attacks.</span></li><li><strong>wpscan</strong><span>Scans WordPress websites for vulnerabilities.</span></li><li><strong>joomscan</strong><span>Finds vulnerabilities in Joomla CMS.</span></li><li><strong>tlssled</strong><span>Evaluates SSL/TLS security configuration.</span></li><li><strong>msfconsole</strong><span>Launches the Metasploit Framework.</span></li><li><strong>msfupdate</strong><span>Updates Metasploit with latest exploits.</span></li>
+      </ul>
+    </article>
+    
+    <article class="atlas-card panel">
+      <h3>Forensics / Sniffing / Passwords / Access</h3>
+      <ul class="atlas-list">
+        <li><strong>p0f</strong><span>Passive OS fingerprinting tool.</span></li><li><strong>pdf-parser</strong><span>Analyzes suspicious PDFs for embedded scripts.</span></li><li><strong>dd_rescue</strong><span>Recovers data from damaged disks.</span></li><li><strong>mitmproxy</strong><span>Man-in-the-middle proxy for web traffic inspection.</span></li><li><strong>sslstrip</strong><span>Downgrades HTTPS to HTTP to capture credentials.</span></li><li><strong>wireshark</strong><span>Packet analyzer for monitoring network traffic.</span></li><li><strong>hydra</strong><span>Performs brute-force login attacks.</span></li><li><strong>john</strong><span>Password cracking tool using dictionary attacks.</span></li><li><strong>unshadow</strong><span>Combines password files for cracking.</span></li><li><strong>rcrack</strong><span>Uses rainbow tables to crack hashes.</span></li><li><strong>hash-identifier</strong><span>Identifies hash types.</span></li><li><strong>python -m SimpleHTTPServer</strong><span>Creates a quick web server to transfer files.</span></li><li><strong>sbd</strong><span>Creates encrypted remote command connections.</span></li><li><strong>weevely</strong><span>Generates PHP webshells for remote control.</span></li><li><strong>cryptcat</strong><span>Encrypted version of Netcat for secure connections.</span></li><li><strong>httptunnel</strong><span>Creates tunnels through HTTP to bypass firewalls.</span></li><li><strong>dns2tcp</strong><span>Sends TCP traffic through a DNS channel.</span></li>
+      </ul>
+    </article>
+    
+      </div>
+    </section>
+
+    <section id="quiz-arena" class="study-section">
+      <div class="section-heading">
+        <span class="section-kicker">Game Mode</span>
+        <h2>Quiz Arena</h2>
+      </div>
+      <div class="quiz-shell panel">
+        <div class="quiz-toolbar">
+          <div class="toolbar-block">
+            <label for="modeSelect">Mode</label>
+            <select id="modeSelect">
+              <option value="mixed">Mixed</option>
+              <option value="Installation">Installation</option>
+              <option value="Recon">Recon</option>
+              <option value="Commands">Commands</option>
+            </select>
+          </div>
+          <div class="toolbar-block">
+            <label for="countSelect">Questions</label>
+            <select id="countSelect">
+              <option value="10">10</option>
+              <option value="15" selected>15</option>
+              <option value="25">25</option>
+              <option value="all">All Available</option>
+            </select>
+          </div>
+          <div class="toolbar-actions">
+            <button id="startBtn" class="hero-btn primary" type="button">Start Quiz</button>
+            <button id="restartBtn" class="hero-btn" type="button">Restart</button>
+          </div>
+        </div>
+
+        <div class="scoreboard">
+          <div class="score-chip"><span>Score</span><strong id="scoreValue">0</strong></div>
+          <div class="score-chip"><span>Streak</span><strong id="streakValue">0</strong></div>
+          <div class="score-chip"><span>Best</span><strong id="bestValue">0</strong></div>
+          <div class="score-chip"><span>Progress</span><strong id="progressValue">0/0</strong></div>
+        </div>
+
+        <div class="progress-rail" aria-hidden="true">
+          <div id="progressBar" class="progress-bar"></div>
+        </div>
+
+        <div id="quizIntro" class="quiz-intro">
+          <h3>Ready to play?</h3>
+          <p>You will get multiple-choice questions pulled from all three PDFs. Mixed mode blends installation, recon, and command memorization into one exam-style run.</p>
+          <p class="small-note">Tip: use the study cards first if your brain still needs coffee.</p>
+        </div>
+
+        <div id="quizCard" class="quiz-card hidden" aria-live="polite">
+          <p class="quiz-meta" id="quizMeta">Question 1</p>
+          <h3 id="questionText">Question text</h3>
+          <div id="answerGrid" class="answer-grid"></div>
+          <div id="feedbackBox" class="feedback-box hidden"></div>
+          <div class="quiz-nav">
+            <button id="nextBtn" class="hero-btn primary hidden" type="button">Next Question</button>
+          </div>
+        </div>
+
+        <div id="quizEnd" class="quiz-end hidden" aria-live="polite">
+          <h3>Run complete 🎯</h3>
+          <p id="finalLine">You finished the quiz.</p>
+          <div id="resultBreakdown" class="result-breakdown"></div>
+          <button id="playAgainBtn" class="hero-btn primary" type="button">Play Again</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="pdf-library" class="study-section">
+      <div class="section-heading">
+        <span class="section-kicker">Source Docs</span>
+        <h2>PDF Library</h2>
+      </div>
+      <div class="pdf-grid">
+        <article class="pdf-card panel">
+          <h3>Installation &amp; Configuration</h3>
+          <p>VirtualBox setup, Kali installation, update commands, and Metasploitable lab setup.</p>
+          <div class="pdf-actions">
+            <a class="hero-btn primary" href="kali_installation_and_configuration.pdf" target="_blank" rel="noopener">Open PDF</a>
+          </div>
+        </article>
+        <article class="pdf-card panel">
+          <h3>Information Gathering Tools</h3>
+          <p>Nmap, Zenmap, stealth scan, Searchsploit, DNS tools, LBD, Hping3, and the Metagoofil example.</p>
+          <div class="pdf-actions">
+            <a class="hero-btn primary" href="kali_information_gathering_tools.pdf" target="_blank" rel="noopener">Open PDF</a>
+          </div>
+        </article>
+        <article class="pdf-card panel">
+          <h3>Kali Commands</h3>
+          <p>Category-based command review for recon, wireless, web, forensics, sniffing, password cracking, and maintaining access.</p>
+          <div class="pdf-actions">
+            <a class="hero-btn primary" href="kali_commands.pdf" target="_blank" rel="noopener">Open PDF</a>
+          </div>
+        </article>
+      </div>
+      <p class="small-note">For best results, keep the HTML, CSS, and the three PDFs together in one folder or use the bundle zip.</p>
+    </section>
+  </main>
+
+  <a class="back-to-top" href="#top" aria-label="Back to top">↑ Top</a>
+
+  <script>
+    const QUESTION_BANK = [{"q": "What does the lesson describe Kali Linux as?", "choices": ["A proprietary antivirus suite", "An open-source security package with categorized tools", "A Windows-only firewall manager", "A hardware diagnostic BIOS"], "a": 1, "exp": "The installation lesson introduces Kali Linux as an open-source security package whose tools are divided by category.", "cat": "Installation"}, {"q": "Which setup does the lesson present as a practical and safe testing option?", "choices": ["Dual-booting on every machine", "Running Kali inside VirtualBox", "Installing on a phone", "Using only a USB mouse"], "a": 1, "exp": "VirtualBox is presented as a safe place to test unknown packages and code alongside a main OS.", "cat": "Installation"}, {"q": "According to the lesson, Kali can be used as which of the following?", "choices": ["Only a direct hard-disk install", "Only a live USB", "Only a cloud container", "An OS install, a VM, or a live boot CD/USB"], "a": 3, "exp": "The PDF mentions three usage forms: direct install, virtual machine, or live boot media.", "cat": "Installation"}, {"q": "What is the first big step in the setup flow shown in the lesson?", "choices": ["Install Metasploitable", "Install Wireshark", "Install VirtualBox", "Install a browser plugin"], "a": 2, "exp": "The installation sequence starts with downloading and installing VirtualBox.", "cat": "Installation"}, {"q": "After installing VirtualBox, what comes next in the lesson’s flow?", "choices": ["Download and install the Kali Linux distribution", "Install Microsoft Office", "Replace your main OS immediately", "Delete all snapshots"], "a": 0, "exp": "The notes say first install VirtualBox, then download and install Kali Linux.", "cat": "Installation"}, {"q": "What are the default Kali credentials listed in the installation PDF?", "choices": ["admin / admin", "kali / kali", "root / toor", "msfadmin / msfadmin"], "a": 2, "exp": "The lesson lists the default username as root and password as toor.", "cat": "Installation"}, {"q": "Which command refreshes package information from Kali repositories?", "choices": ["apt-get refresh", "apt-get upgrade", "apt-get update", "apt-get dist-upgrade"], "a": 2, "exp": "apt-get update updates the package index.", "cat": "Installation"}, {"q": "Which command upgrades installed packages to their latest versions?", "choices": ["apt-get upgrade", "apt-get update", "apt-get mirror", "apt-get scan"], "a": 0, "exp": "The KALI-COMMANDS PDF says apt-get upgrade updates installed packages.", "cat": "Installation"}, {"q": "Which command does the lesson use for a fuller system upgrade with dependency changes?", "choices": ["apt-get dist-upgrade", "apt-get fullscan", "apt-get stage-two", "apt-get checksum"], "a": 0, "exp": "The notes call apt-get dist-upgrade a full system upgrade including dependency changes.", "cat": "Installation"}, {"q": "What letter do the notes tell you to type when Kali asks whether to continue an upgrade?", "choices": ["A", "Y", "C", "S"], "a": 1, "exp": "The installation PDF says type Y and press Enter.", "cat": "Installation"}, {"q": "What lab target machine is introduced for testing Kali tools?", "choices": ["Metasploitable", "ParrotOS", "BackTrack", "Ubuntu Server"], "a": 0, "exp": "The lab setup section tells the student to download Metasploitable from Rapid7.", "cat": "Installation"}, {"q": "What are the default Metasploitable credentials shown in the lesson?", "choices": ["root / toor", "admin / password", "msfadmin / msfadmin", "guest / guest"], "a": 2, "exp": "The lab VM login shown is msfadmin / msfadmin.", "cat": "Installation"}, {"q": "When adding Metasploitable in VirtualBox, which hard disk option does the lesson use?", "choices": ["Create a new blank disk", "Do not add a hard disk", "Use an existing virtual hard disk file", "Attach a floppy image"], "a": 2, "exp": "The notes instruct you to choose 'Use an existing virtual hard disk file.'", "cat": "Installation"}, {"q": "What is the main difference between Nmap and Zenmap in the lesson?", "choices": ["Nmap is Windows-only, Zenmap is Linux-only", "Nmap uses the command line, Zenmap has a GUI", "Zenmap is for passwords only", "They scan different protocols entirely"], "a": 1, "exp": "The information gathering notes say they are practically the same tool, except Nmap is CLI and Zenmap is GUI.", "cat": "Recon"}, {"q": "Which Nmap option is used for OS type/version detection?", "choices": ["-sS", "-T4", "-O", "-p"], "a": 2, "exp": "The PDF explicitly says -O is used for OS detection.", "cat": "Recon"}, {"q": "In the command `nmap -p 1-65535 -T4 192.168.1.101`, what does `-p 1-65535` mean?", "choices": ["Ping one host 65,535 times", "Scan all TCP ports", "Show only privileged ports", "Pause the scan"], "a": 1, "exp": "The lesson says the range 1-65535 scans all TCP ports.", "cat": "Recon"}, {"q": "What does `-T4` represent in the Nmap example?", "choices": ["The target’s OS type", "A scan timing/speed setting", "A transport encryption key", "A tunnel mode"], "a": 1, "exp": "The lesson explains -T4 as the scanning speed setting used.", "cat": "Recon"}, {"q": "What is another name for a stealth scan in the Nmap section?", "choices": ["Rainbow scan", "SYN or half-open scan", "Mirror scan", "Live scan"], "a": 1, "exp": "The notes say stealth scan is also known as a SYN or half-open scan.", "cat": "Recon"}, {"q": "During a SYN scan, what does a SYN/ACK usually suggest?", "choices": ["The port is closed", "The cable is disconnected", "The port is listening/open", "The DNS zone transferred"], "a": 2, "exp": "The lesson states SYN/ACK implies the target would complete the connection, so the port is listening.", "cat": "Recon"}, {"q": "Which response in a SYN scan suggests a port is closed or inactive?", "choices": ["SYN/ACK", "FIN", "RST", "ARP"], "a": 2, "exp": "The notes say an RST means the port is assumed closed or inactive.", "cat": "Recon"}, {"q": "Which command performs the stealth/SYN scan shown in the lesson?", "choices": ["nmap -hping 192.168.1.101", "nmap -sS -T4 192.168.1.101", "nmap -O -z 192.168.1.101", "zenmap --ghost"], "a": 1, "exp": "The information gathering PDF shows nmap -sS -T4 192.168.1.101.", "cat": "Recon"}, {"q": "What does Searchsploit let a Kali user do directly from the command line?", "choices": ["Build a firewall", "Search the Exploit Database archive", "Image a hard drive", "Create a VM snapshot"], "a": 1, "exp": "Searchsploit is described as a way to search the Exploit Database archive from the command line.", "cat": "Recon"}, {"q": "What general command pattern does the lesson show for Searchsploit?", "choices": ["searchsploit exploit index name", "searchsploit -all ports", "sploitsearch target", "dbsearch exploit"], "a": 0, "exp": "The PDF tells students to type 'searchsploit exploit index name.'", "cat": "Recon"}, {"q": "What does `dnsenum` help retrieve according to the lesson?", "choices": ["CPU temperatures", "MX, A, and other DNS records", "Only MAC addresses", "Wi-Fi passwords"], "a": 1, "exp": "dnsenum.pl is described as retrieving MX, A, and other records tied to a domain.", "cat": "Recon"}, {"q": "What does the lesson say DNSMAP helps find?", "choices": ["Only operating systems", "Phone numbers, contacts, and subdomains", "BIOS serial numbers", "USB drivers"], "a": 1, "exp": "The notes say DNSMAP helps find phone numbers, contacts, and subdomains connected to the searched domain.", "cat": "Recon"}, {"q": "What is `dnstracer` used for?", "choices": ["Creating TLS certificates", "Determining where a DNS server gets its information", "Capturing Wi-Fi handshakes", "Cracking password hashes"], "a": 1, "exp": "dnstracer determines where a given DNS server gets its information for a hostname.", "cat": "Recon"}, {"q": "What does LBD stand for?", "choices": ["Local Binary Driver", "Load Balancing Detector", "Layered Buffer Decoder", "Linux Boot Daemon"], "a": 1, "exp": "The notes expand LBD as Load Balancing Detector.", "cat": "Recon"}, {"q": "If `lbd domainname` returns FOUND, what does that mean in the lesson?", "choices": ["The domain uses load balancing", "The domain was deleted", "The target is offline", "The password was found"], "a": 0, "exp": "FOUND means the server has load balancing.", "cat": "Recon"}, {"q": "Why is Hping3 described as more advanced than a basic ping tool?", "choices": ["It only works on printers", "It can use TCP, UDP, ICMP, and RAW-IP and can bypass some filters", "It requires no network", "It is just a GUI for ping"], "a": 1, "exp": "The notes say Hping3 is more advanced because it can use multiple protocols and bypass firewall filters.", "cat": "Recon"}, {"q": "Which command shows Hping3 help in the lesson?", "choices": ["hping3 /?", "hping3 -h", "help hping3", "ping3 --manual"], "a": 1, "exp": "The Hping3 section explicitly shows hping3 -h.", "cat": "Recon"}, {"q": "What does the Metagoofil screenshot on the last page suggest?", "choices": ["It is patching the kernel", "It is searching online for PDF files from a target domain", "It is formatting a drive", "It is creating a VPN"], "a": 1, "exp": "The screenshot shows Metagoofil performing an online search for PDF files with a set limit.", "cat": "Recon"}, {"q": "Which command in the command PDF is described as scanning Cisco devices for vulnerabilities?", "choices": ["cisco-torch", "hydra", "kismet", "dns2tcpd"], "a": 0, "exp": "The KALI-COMMANDS PDF describes cisco-torch as scanning Cisco devices for vulnerabilities.", "cat": "Commands"}, {"q": "What is CAT in the command PDF?", "choices": ["Cisco Auditing Tool", "Capture Analysis Terminal", "Credential Attack Tunnel", "Core Access Tester"], "a": 0, "exp": "CAT is expanded as Cisco Auditing Tool.", "cat": "Commands"}, {"q": "Which tool is described as a Cisco Global Exploiter used to exploit Cisco vulnerabilities?", "choices": ["bed", "cge.pl", "sslstrip", "john"], "a": 1, "exp": "The PDF labels cge.pl as Cisco Global Exploiter.", "cat": "Commands"}, {"q": "Which command is used to enable monitor mode on wireless cards?", "choices": ["airmon-ng start wlan0", "wireshark", "msfupdate", "p0f"], "a": 0, "exp": "airmon-ng start wlan0 enables monitor mode for wireless testing.", "cat": "Commands"}, {"q": "Which command in the PDF is the wireless network detector and sniffer?", "choices": ["kismet", "apt-get update", "dnsenum", "unshadow"], "a": 0, "exp": "The wireless attack section identifies kismet as a network detector and sniffer.", "cat": "Commands"}, {"q": "Which web application testing tool automates SQL injection attacks?", "choices": ["sqlmap", "wpscan", "joomscan", "mitmproxy"], "a": 0, "exp": "The web testing section says sqlmap automates SQL injection attacks.", "cat": "Commands"}, {"q": "Which command scans WordPress websites for vulnerabilities?", "choices": ["tlssled", "sqlmap", "wpscan", "weevely"], "a": 2, "exp": "wpscan is described as scanning WordPress sites for vulnerabilities.", "cat": "Commands"}, {"q": "Which command finds vulnerabilities in Joomla CMS?", "choices": ["joomscan", "msfconsole", "rcrack", "dd_rescue"], "a": 0, "exp": "joomscan is listed as the Joomla vulnerability scanner.", "cat": "Commands"}, {"q": "What does `tlssled URL port` evaluate?", "choices": ["GPU temperature", "SSL/TLS security configuration", "ARP table age", "Operating system uptime"], "a": 1, "exp": "The PDF says tlssled evaluates SSL/TLS security configuration.", "cat": "Commands"}, {"q": "Which command launches the Metasploit Framework?", "choices": ["msfconsole", "msfupdate", "metagoofil", "cryptcat"], "a": 0, "exp": "The exploitation tools section says msfconsole launches Metasploit.", "cat": "Commands"}, {"q": "Which command updates Metasploit with the latest exploits?", "choices": ["apt-get update", "msfupdate", "john", "httptunnel_server"], "a": 1, "exp": "msfupdate is described as updating Metasploit with the latest exploits.", "cat": "Commands"}, {"q": "Which forensic command is a passive OS fingerprinting tool?", "choices": ["p0f", "pdf-parser", "dd_rescue", "wireshark"], "a": 0, "exp": "The forensics section labels p0f as a passive OS fingerprinting tool.", "cat": "Commands"}, {"q": "Which forensic command analyzes suspicious PDF files for embedded scripts?", "choices": ["pdf-parser", "unshadow", "bed", "hash-identifier"], "a": 0, "exp": "pdf-parser is described as analyzing suspicious PDFs for embedded scripts.", "cat": "Commands"}, {"q": "Which command recovers data from damaged disks?", "choices": ["dd_rescue", "mitmproxy", "cryptcat", "kismet"], "a": 0, "exp": "The PDF says dd_rescue recovers data from damaged disks.", "cat": "Commands"}, {"q": "Which tool is described as a man-in-the-middle proxy for inspecting web traffic?", "choices": ["sslstrip", "mitmproxy", "wireshark", "hping3"], "a": 1, "exp": "The sniffing section identifies mitmproxy as a man-in-the-middle proxy.", "cat": "Commands"}, {"q": "Which command is described as downgrading HTTPS to HTTP to capture credentials?", "choices": ["sslstrip", "wireshark", "dnsmap", "airmon-ng"], "a": 0, "exp": "The command PDF describes sslstrip this way.", "cat": "Commands"}, {"q": "Which tool is a packet analyzer for monitoring network traffic?", "choices": ["wireshark", "john", "nmap", "lbd"], "a": 0, "exp": "Wireshark is the packet analyzer entry in the sniffing section.", "cat": "Commands"}, {"q": "Which password cracking tool performs brute-force login attacks?", "choices": ["hydra", "john", "unshadow", "hash-identifier"], "a": 0, "exp": "The password cracking section says hydra performs brute-force login attacks.", "cat": "Commands"}, {"q": "Which tool is described as using dictionary attacks for password cracking?", "choices": ["john", "hydra", "rcrack", "sqlmap"], "a": 0, "exp": "The PDF identifies john as a password cracking tool using dictionary attacks.", "cat": "Commands"}, {"q": "What does `unshadow passwd shadow > unshadowed.txt` do?", "choices": ["Hashes a new password", "Combines password files for cracking", "Creates a Wi-Fi report", "Opens a tunnel"], "a": 1, "exp": "The PDF says unshadow combines password files for cracking.", "cat": "Commands"}, {"q": "What does `rcrack tables -f hashes` use to crack password hashes?", "choices": ["Rainbow tables", "DNS tunneling", "ARP poisoning", "Full disk imaging"], "a": 0, "exp": "The command PDF says rcrack uses rainbow tables.", "cat": "Commands"}, {"q": "What does `hash-identifier` do according to the PDF?", "choices": ["Generates password hashes", "Identifies hash types such as MD5 and SHA1", "Backs up user accounts", "Finds open ports"], "a": 1, "exp": "The PDF says hash-identifier identifies hash types.", "cat": "Commands"}, {"q": "What is the purpose of `python -m SimpleHTTPServer` in the PDF?", "choices": ["Create a quick web server to transfer files", "Launch Metasploit", "Enumerate DNS records", "Enable monitor mode"], "a": 0, "exp": "The maintaining access section describes it as a quick web server for file transfer.", "cat": "Commands"}, {"q": "What is `sbd -l -p 44` described as creating?", "choices": ["A ZIP archive", "Encrypted remote command connections", "A local DNS resolver", "A wireless heat map"], "a": 1, "exp": "The PDF says sbd creates encrypted remote command connections.", "cat": "Commands"}, {"q": "What does `weevely generate password shell.php` generate according to the PDF?", "choices": ["A SQL report", "A PHP webshell", "A PDF parser output", "A packet trace"], "a": 1, "exp": "The maintaining access section says weevely generates PHP webshells.", "cat": "Commands"}, {"q": "What is `cryptcat` described as?", "choices": ["An encrypted version of Netcat for secure connections", "A Cisco auditing suite", "A WordPress scanner", "A DNS record mapper"], "a": 0, "exp": "The PDF describes cryptcat as an encrypted version of Netcat.", "cat": "Commands"}, {"q": "What do `httptunnel_server` and `httptunnel_client` create?", "choices": ["Tunnels through HTTP to bypass firewalls", "A local wireless AP", "A kernel module", "Password rainbow tables"], "a": 0, "exp": "The PDF says httptunnel creates tunnels through HTTP.", "cat": "Commands"}, {"q": "What is the purpose of `dns2tcpd` in the command PDF?", "choices": ["Send TCP traffic through a DNS channel", "Update Kali repositories", "Scan for open ports", "Recover damaged disks"], "a": 0, "exp": "The PDF says dns2tcp sends TCP traffic through a DNS channel.", "cat": "Commands"}];
+
+    const els = {
+      modeSelect: document.getElementById('modeSelect'),
+      countSelect: document.getElementById('countSelect'),
+      startBtn: document.getElementById('startBtn'),
+      restartBtn: document.getElementById('restartBtn'),
+      playAgainBtn: document.getElementById('playAgainBtn'),
+      quizIntro: document.getElementById('quizIntro'),
+      quizCard: document.getElementById('quizCard'),
+      quizEnd: document.getElementById('quizEnd'),
+      questionText: document.getElementById('questionText'),
+      quizMeta: document.getElementById('quizMeta'),
+      answerGrid: document.getElementById('answerGrid'),
+      feedbackBox: document.getElementById('feedbackBox'),
+      nextBtn: document.getElementById('nextBtn'),
+      scoreValue: document.getElementById('scoreValue'),
+      streakValue: document.getElementById('streakValue'),
+      bestValue: document.getElementById('bestValue'),
+      progressValue: document.getElementById('progressValue'),
+      progressBar: document.getElementById('progressBar'),
+      finalLine: document.getElementById('finalLine'),
+      resultBreakdown: document.getElementById('resultBreakdown'),
+    };
+
+    const BEST_KEY = 'kali-quiz-best-score-v1';
+    let bestScore = Number(localStorage.getItem(BEST_KEY) || 0);
+    els.bestValue.textContent = bestScore;
+
+    let state = {
+      questions: [],
+      index: 0,
+      score: 0,
+      streak: 0,
+      answered: false,
+      categoryHits: {},
+      categoryTotal: {},
+    };
+
+    function shuffle(arr) {
+      const copy = [...arr];
+      for (let i = copy.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [copy[i], copy[j]] = [copy[j], copy[i]];
+      }
+      return copy;
+    }
+
+    function sampleQuestions() {
+      const mode = els.modeSelect.value;
+      let pool = QUESTION_BANK;
+      if (mode !== 'mixed') {
+        pool = QUESTION_BANK.filter(q => q.cat === mode);
+      }
+      const countRaw = els.countSelect.value;
+      const desired = countRaw === 'all' ? pool.length : Number(countRaw);
+      return shuffle(pool).slice(0, Math.min(desired, pool.length));
+    }
+
+    function resetState() {
+      state = {
+        questions: sampleQuestions(),
+        index: 0,
+        score: 0,
+        streak: 0,
+        answered: false,
+        categoryHits: {},
+        categoryTotal: {},
+      };
+      state.questions.forEach(q => {
+        state.categoryTotal[q.cat] = (state.categoryTotal[q.cat] || 0) + 1;
+      });
+      updateScoreboard();
+      els.feedbackBox.classList.add('hidden');
+      els.nextBtn.classList.add('hidden');
+      els.quizIntro.classList.add('hidden');
+      els.quizEnd.classList.add('hidden');
+      els.quizCard.classList.remove('hidden');
+      if (!state.questions.length) {
+        els.quizCard.classList.add('hidden');
+        els.quizIntro.classList.remove('hidden');
+        els.quizIntro.innerHTML = '<h3>No questions found</h3><p>Try a different mode.</p>';
+        return;
+      }
+      renderQuestion();
+    }
+
+    function updateScoreboard() {
+      els.scoreValue.textContent = state.score;
+      els.streakValue.textContent = state.streak;
+      els.progressValue.textContent = `${Math.min(state.index, state.questions.length)}/${state.questions.length}`;
+      const progress = state.questions.length ? (Math.min(state.index, state.questions.length) / state.questions.length) * 100 : 0;
+      els.progressBar.style.width = `${progress}%`;
+      els.bestValue.textContent = bestScore;
+    }
+
+    function renderQuestion() {
+      const q = state.questions[state.index];
+      state.answered = false;
+      els.feedbackBox.className = 'feedback-box hidden';
+      els.nextBtn.classList.add('hidden');
+      els.quizMeta.textContent = `Question ${state.index + 1} of ${state.questions.length} · ${q.cat}`;
+      els.questionText.textContent = q.q;
+      els.answerGrid.innerHTML = '';
+
+      const order = shuffle(q.choices.map((choice, idx) => ({choice, idx})));
+      order.forEach(item => {
+        const btn = document.createElement('button');
+        btn.type = 'button';
+        btn.className = 'answer-btn';
+        btn.textContent = item.choice;
+        btn.addEventListener('click', () => handleAnswer(item.idx, btn, q, order));
+        els.answerGrid.appendChild(btn);
+      });
+      updateScoreboard();
+    }
+
+    function handleAnswer(choiceIndex, buttonEl, q, order) {
+      if (state.answered) return;
+      state.answered = true;
+
+      const buttons = Array.from(els.answerGrid.querySelectorAll('.answer-btn'));
+      buttons.forEach(btn => btn.disabled = true);
+
+      const correctIndex = q.a;
+      const isCorrect = choiceIndex === correctIndex;
+      const correctText = q.choices[correctIndex];
+
+      buttons.forEach(btn => {
+        if (btn.textContent === correctText) btn.classList.add('correct');
+      });
+
+      if (!isCorrect) {
+        buttonEl.classList.add('wrong');
+      }
+
+      if (isCorrect) {
+        state.score += 1;
+        state.streak += 1;
+        state.categoryHits[q.cat] = (state.categoryHits[q.cat] || 0) + 1;
+        els.feedbackBox.className = 'feedback-box correct';
+        els.feedbackBox.innerHTML = `<strong>Correct.</strong> ${q.exp}`;
+      } else {
+        state.streak = 0;
+        els.feedbackBox.className = 'feedback-box wrong';
+        els.feedbackBox.innerHTML = `<strong>Not quite.</strong> Correct answer: <em>${correctText}</em>. ${q.exp}`;
+      }
+
+      els.feedbackBox.classList.remove('hidden');
+      els.nextBtn.classList.remove('hidden');
+
+      if (state.score > bestScore) {
+        bestScore = state.score;
+        localStorage.setItem(BEST_KEY, String(bestScore));
+      }
+      updateScoreboard();
+    }
+
+    function nextQuestion() {
+      state.index += 1;
+      if (state.index >= state.questions.length) {
+        finishQuiz();
+        return;
+      }
+      renderQuestion();
+    }
+
+    function finishQuiz() {
+      els.quizCard.classList.add('hidden');
+      els.quizEnd.classList.remove('hidden');
+      const percent = state.questions.length ? Math.round((state.score / state.questions.length) * 100) : 0;
+      let badge = 'Keep grinding.';
+      if (percent >= 90) badge = 'Outstanding run. Midterm boss energy.';
+      else if (percent >= 75) badge = 'Strong score. You are exam-ready.';
+      else if (percent >= 60) badge = 'Solid base. One more review pass will help.';
+      els.finalLine.textContent = `Final score: ${state.score} / ${state.questions.length} (${percent}%). ${badge}`;
+
+      const rows = Object.keys(state.categoryTotal).map(cat => {
+        const hit = state.categoryHits[cat] || 0;
+        const total = state.categoryTotal[cat];
+        return `<div class="result-row"><span>${cat}</span><strong>${hit} / ${total}</strong></div>`;
+      }).join('');
+      els.resultBreakdown.innerHTML = rows || '<p>No category data available.</p>';
+      state.index = state.questions.length;
+      updateScoreboard();
+    }
+
+    els.startBtn.addEventListener('click', resetState);
+    els.restartBtn.addEventListener('click', resetState);
+    els.playAgainBtn.addEventListener('click', resetState);
+    els.nextBtn.addEventListener('click', nextQuestion);
+
+    updateScoreboard();
+  </script>
+</body>
+</html>
